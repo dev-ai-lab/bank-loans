@@ -9,8 +9,8 @@ import java.util.Optional;
 public class AuditAwareImpl implements AuditorAware<String> {
 
     /**
-     * Returns the current auditor of the application.
-     *
+     * Returns the current auditor of the application. It is used in combination with AuditingEntityListener in BaseEntity
+     * and @CreatedDate, @CreatedBy etc.
      * @return the current auditor.
      */
     @Override
